@@ -1,4 +1,5 @@
-import project1 from "../assets/projects/project-1.png";
+import project1_1 from "../assets/projects/project-1_1.png";
+import project1_2 from "../assets/projects/project-1_2.png";
 
 export const HERO_CONTENT = `
   I'm a developer passionate about leveraging data to create valuable, impactful products. My work lies at the intersection of engineering and innovation, blending thoughtful planning with robust development to craft solutions that deliver value and meet user needs.<br/><br/>
@@ -43,7 +44,18 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Cluster Management System",
-    image: project1,
+    image: [
+      {
+        src:project1_1, 
+        title:'Dashboard Page',
+        description: 'Dashboard with a variety of charts',
+      },
+      {
+        src:project1_2, 
+        title:'Line charts',
+        description: 'Line charts updated in real-time',
+      }
+    ],
     description:
       "A fully functional high-performance computing resource management system with capabilities for dynamically adding or removing nodes, clusters, and storage. It supports real-time resource usage visualization through a variety of interactive charts, including gauges, line charts, bar charts, and more, enabling efficient monitoring and management.",
     technologies: ["Vue.js", "TailwindCSS", "Flask", "Ehcarts", "Slurm", "Prometheus", "REST"],
@@ -62,7 +74,7 @@ export const PUBLICATION = [
 ];
 
 export const CONTACT = {
-  address: "x Broadbent St, Scullin ACT 2614",
+  address: "Broadbent St, Scullin ACT 2614",
   phoneNo: "+61 4135 916 48 ",
   email: "jies_2408@126.com",
 };
