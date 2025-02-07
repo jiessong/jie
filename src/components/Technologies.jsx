@@ -6,6 +6,7 @@ import { SiFlask } from "react-icons/si";
 import { DiDjango } from "react-icons/di";
 import { motion } from 'motion/react'
 import { SiPandas } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -44,6 +45,9 @@ const Technologies = () => {
                 </motion.div>
                 <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                     <DiRedis className="text-7xl text-red-700" />
+                </motion.div>
+                <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-green-900 p-4">
+                    <SiMongodb className="text-7xl text-green-900" />
                 </motion.div>
             </motion.div>
         </div>

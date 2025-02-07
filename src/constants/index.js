@@ -1,5 +1,8 @@
 import project1_1 from "../assets/projects/project-1_1.png";
 import project1_2 from "../assets/projects/project-1_2.png";
+import project2_1 from "../assets/projects/project-2_1.png";
+import project2_2 from "../assets/projects/project-2_2.png";
+import project2_3 from "../assets/projects/project-2_3.png";
 
 export const HERO_CONTENT = `
   I'm a developer passionate about leveraging data to create valuable, impactful products. My work lies at the intersection of engineering and innovation, blending thoughtful planning with robust development to craft solutions that deliver value and meet user needs.<br/><br/>
@@ -43,7 +46,30 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Cluster Management System",
+    title: "Food Ordering System",
+    image: [
+      {
+        src:project2_1, 
+        title:'Dashboard Page',
+        description: 'Dashboard with searching food bar',
+      },
+      {
+        src:project2_2, 
+        title:'Food Editing Page',
+        description: 'Editing or adding food page',
+      },
+      {
+        src:project2_3, 
+        title:'Login Page',
+        description: 'Login Page',
+      }
+    ],
+    description:
+      "A fully functional food ordering system (currently under development) that supports role-based logins for both clients and businesses. Clients can browse menus, place orders, and track delivery status, while businesses can set menus and update inventory. The system also features interactive dashboards with real-time order tracking to enhance the overall service experience.",
+    technologies: ["React", "TailwindCSS", "Node", "MongoDB", "TypeScript", "Shadcn", "Auth0", "Stripe", "Cloudinary", "Render"],
+  },
+  {
+    title: "Clusterdsdfs Management System",
     image: [
       {
         src:project1_1, 
@@ -59,8 +85,9 @@ export const PROJECTS = [
     description:
       "A fully functional high-performance computing resource management system with capabilities for dynamically adding or removing nodes, clusters, and storage. It supports real-time resource usage visualization through a variety of interactive charts, including gauges, line charts, bar charts, and more, enabling efficient monitoring and management.",
     technologies: ["Vue.js", "TailwindCSS", "Flask", "Ehcarts", "Slurm", "Prometheus", "REST"],
-  }
+  },
 ];
+
 
 export const PUBLICATION = [
   {
